@@ -9,6 +9,7 @@ import SignUp from './SignUp.jsx'
 import Gallery from './Gallery.jsx'
 import About from './About.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Explore from './Explore.jsx'
 
 
 const router = createBrowserRouter(
@@ -20,8 +21,8 @@ const router = createBrowserRouter(
       <Route path="/signUp" element={<SignUp/>} />
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/about" element={<About/>} />
-      {/* <Route path="/explore" element={<Explore/>} />
-      <Route path="/favorites" element={<Favorites/>} /> */}
+      <Route path="/explore" element={<Explore/>} />
+      {/* <Route path="/favorites" element={<Favorites/>} /> */}
     </Route>
   ),
 );

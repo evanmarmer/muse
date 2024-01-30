@@ -1,0 +1,25 @@
+.container {
+   overflow: hidden;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-auto-rows: 300px;
+    gap: 16px; /* Adjust the gap between images as needed */
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
