@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-image: linear-gradient(to bottom right, #0d1013, #4ca1af)
+  }
+
+.links {
+  padding: 10px; 
+  margin-right: 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Gill Sans', sans-serif
+}
+
+li {
+  display: inline;
+  float: right
+
+}
+
+ul.nav-links {
+  margin-top: 30px;
+}
+
+.SU {
+  background-color: #eaa51cf0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-right: 60px;
+  font-family: 'Gill Sans', sans-serif
+}
+
+.linksL {
+  padding: 10px; 
+  margin-right: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Gill Sans', sans-serif
+}

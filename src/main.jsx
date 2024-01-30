@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import {RouterProvider, Route, createBrowserRouter, createRoutesFromElements} from 'react-router-dom';
-// import Tracker from './Tracker.jsx'
-// import Home from './Home.jsx'
+import Login from './Login.jsx'
+import Home from './Home.jsx'
+import SignUp from './SignUp.jsx'
+import Gallery from './Gallery.jsx'
+import About from './About.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const router = createBrowserRouter(
@@ -13,10 +17,11 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />} >
       <Route index element={<Home/>} />
       <Route path="/login" element={<Login/>} />
+      <Route path="/signUp" element={<SignUp/>} />
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/about" element={<About/>} />
-      <Route path="/explore" element={<Explore/>} />
-      <Route path="/favorites" element={<Favorites/>} />
+      {/* <Route path="/explore" element={<Explore/>} />
+      <Route path="/favorites" element={<Favorites/>} /> */}
     </Route>
   ),
 );

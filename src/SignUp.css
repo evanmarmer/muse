@@ -1,0 +1,33 @@
+.form {
+    border: 2px solid #333; /* Set border properties */
+    padding: 20px; /* Add some padding for space inside the border */
+    width: 560px; /* Set a width if desired */
+    margin: 0 auto; /* Center the container horizontally */
+    height: 700px;
+    position: absolute; 
+    top: 150px; 
+    left: 920px; 
+    border-radius: 10px; 
+    background-color: #0d101356;
+
+}
+
+.sub-btn {
+    position: absolute; 
+    top: 400px; 
+    left: 50%; 
+    background-color: #eaa51cf0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 60px;
+    font-family: 'Gill Sans', sans-serif
+}
+
+form label {
+    color: white
+}

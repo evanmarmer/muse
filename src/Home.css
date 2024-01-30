@@ -1,0 +1,61 @@
+.muse {
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    position: absolute; 
+    top: 100px; 
+    left: 200px; 
+    font-size: 170px;
+}
+
+.tag {
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    position: absolute; 
+    top: 300px; 
+    left: 200px; 
+    font-size: 50px;
+}
+
+.main-img {
+    height: 700px;
+    position: absolute; 
+    top: 150px; 
+    left: 920px; 
+    border-radius: 10px; 
+}
+
+.SUU {
+    position: absolute; 
+    top: 400px; 
+    left: 200px; 
+    background-color: #eaa51cf0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 60px;
+    font-family: 'Gill Sans', sans-serif
+}
+
+.glass {
+    border: 2px solid #ffffff;
+    position: absolute; 
+    top: 750px; 
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+
+.info {
+    color: white;
+    font-size: 30px;
+    padding: 40px 40px;
+
+}
