@@ -4,6 +4,10 @@ export default function Gallery(){
     
     return (
         <>
+        <p className="text">
+          Let this captivating gallery be your muse, guiding your search for 
+          diverse photo types and sparking inspiration with its vibrant array of images
+       </p>
         <div className="container">
           <div className="image-grid">
             <img src="https://alanmajchrowicz.com/wp-content/uploads/2020/02/moulton_barn_grand_teton_national_park_67219z.jpg" />

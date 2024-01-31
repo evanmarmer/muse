@@ -1,4 +1,5 @@
 .muse {
+    font-weight: bold;
     color: white;
     font-family: 'Gill Sans', sans-serif;
     position: absolute; 
@@ -8,6 +9,7 @@
 }
 
 .tag {
+    font-weight: lighter;
     color: white;
     font-family: 'Gill Sans', sans-serif;
     position: absolute; 
@@ -26,7 +28,7 @@
 
 .SUU {
     position: absolute; 
-    top: 400px; 
+    top: 460px; 
     left: 200px; 
     background-color:#8b523d;
     color: white;
