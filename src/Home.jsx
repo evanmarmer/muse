@@ -13,7 +13,7 @@ export default function Home(){
         <img className="main-img" src="https://i.pinimg.com/originals/3a/bf/ac/3abfacf994ae2eb9e4b92d7c174f7713.jpg" />
         <div className="glass">
             <p className="info">Muse lets you see other photogrophers images to help you get 
-            inspired for your next trip in the field </p>
+            inspired for your next trip in the field (needs work) </p>
         </div>
 
         </>
