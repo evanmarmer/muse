@@ -1,6 +1,7 @@
 import { useState } from "react";
+import './ImgCard.css';
 
-function ImgCard() {
+function ImgCard(props) {
 
     const [tagName, setTagName] = useState('');
 
@@ -13,20 +14,18 @@ function ImgCard() {
         
         const newCard = {
             tagName: tagName,
-            imageSrc: '' // ...props.something??
+            imageSrc: props.photo 
         };
-
+        
         Image.addCard(newCard);
     }
 
     return (
-        <div className="card">
-            {/* ...props.something? */}
-            <img src='' className="cardImage" />
-            <input type="text" value={tagName} onChange={tName}/>
-            <label htmlFor="tag">Tag Name</label>
-            <button onClick={handleSaveClick}>Save</button>
-        </div>
+        <img src={props.photo} className="cardImage" />
+                    // {/* <input type="text" value={tagName} onChange={tName}/>
+                    // <label htmlFor="tag">Tag Name</label>
+                    // <button onClick={handleSaveClick}>Save</button> */}
+               
     );
 };
 
