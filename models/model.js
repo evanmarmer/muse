@@ -1,8 +1,14 @@
 import Sequelize, { DataTypes, Model } from 'sequelize';
 import util from 'util';
 
-const sequelize = new Sequelize('postgresql:///muse_app', {logging: false});
-
+const sequelize = new Sequelize('postgresql:///muse_app', {
+  dialect: 'postgres',
+  logging: false,
+  define: {
+    underscored: true,
+    timestamps: false
+  }
+});
 
 class User extends Model {} 
 
@@ -33,11 +39,11 @@ class Img extends Model {}
           autoIncrement: true,
           primaryKey: true,
       },
-      Img: {
+      img: {
           type: DataTypes.TEXT(),
           allowNull: false,
       },
-      TagName: {
+      tagName: {
         type: DataTypes.STRING,
         allowNull: false
       }
@@ -51,7 +57,7 @@ class Img extends Model {}
   User.hasMany(Img, { foreignKey: 'userId' });
   Img.belongsTo(User, { foreignKey: 'userId' });
 
-  await sequelize.sync()
+  await sequelize.sync({force: true});
   await sequelize.close()
 
   export default sequelize;

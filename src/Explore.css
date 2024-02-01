@@ -17,6 +17,11 @@
     font-family: 'Gill Sans', sans-serif
 }
 
+.input::placeholder {
+    color: rgb(170, 163, 163);
+}
+
+
 .searchBtn {
     background-color: #247986;
     color: white;

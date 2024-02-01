@@ -8,7 +8,7 @@ export default function Explore() {
   const [imgInfo, setImgInfo] = useState([]);
 
   function handleSearch() {
-    axios.get(`https://api.pexels.com/v1/search?query=${searchTerm}&per_page=51`, {
+    axios.get(`https://api.pexels.com/v1/search?query=${searchTerm}&per_page=78`, {
       headers: {
         Authorization: 'jOIaUQhMEACWMZCi0W4Ij5Bnk1IdYDqWd87eUv3I0DpIKqQmyJIkvck9',
       },

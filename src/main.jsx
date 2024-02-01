@@ -10,6 +10,7 @@ import Gallery from './Gallery.jsx'
 import About from './About.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Explore from './Explore.jsx'
+import Images from './Images.jsx'
 
 
 const router = createBrowserRouter(
@@ -22,6 +23,8 @@ const router = createBrowserRouter(
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/explore" element={<Explore/>} />
+      <Route path="/images" element={<Images/>} />
+      
       {/* <Route path="/favorites" element={<Favorites/>} /> */}
     </Route>
   ),
