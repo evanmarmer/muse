@@ -13,17 +13,19 @@
 
 .modal-box {
     position: absolute;
-    width: 50%;
-    min-width: 310px;
-    max-width: 700px;
-    height: 90%;
-    background-color: white;
-    border: solid #444444;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
     z-index: 4;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9,9,9,0.5);
+    backdrop-filter: blur(20px);
 }
 
 .modal-background {
@@ -35,8 +37,38 @@
     height: 100%;
 }
 
-.img {
-    width: 100%;
-    height: 100%;
-   
+.tag-elements {
+    position: absolute;
+    bottom: 0px;
 }
+
+.img-expand {
+    /* width: 600px;
+    height: 1000px; */
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.buttonX{
+    position: absolute;
+    top: 50px;
+    left: 95%;
+    background-color: #247986;
+    color: white;
+    border: none;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 2px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.tag-elements {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

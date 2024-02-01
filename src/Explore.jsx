@@ -8,7 +8,7 @@ export default function Explore() {
   const [imgInfo, setImgInfo] = useState([]);
 
   function handleSearch() {
-    axios.get(`https://api.pexels.com/v1/search?query=${searchTerm}&per_page=5`, {
+    axios.get(`https://api.pexels.com/v1/search?query=${searchTerm}&per_page=51`, {
       headers: {
         Authorization: 'jOIaUQhMEACWMZCi0W4Ij5Bnk1IdYDqWd87eUv3I0DpIKqQmyJIkvck9',
       },
@@ -29,13 +29,13 @@ export default function Explore() {
       </div>
     </div>
     <div className="search">
-      <input
+      <input className="input"
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder="Search..."
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className="searchBtn"onClick={handleSearch}>Search</button>
     </div>
     </>
   );

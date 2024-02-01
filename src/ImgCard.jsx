@@ -26,7 +26,9 @@ function ImgCard(props) {
         setModalIsShown(true);
     }
 
-    console.log('modal is shown:', modalIsShown);
+    function closeModal() {
+        setModalIsShown(false);
+    }
 
     return (
         <>
@@ -35,13 +37,14 @@ function ImgCard(props) {
                 ? <>
                     <div className="modal-wrapper">
                         <div className="modal-box">
-                            <input type="text" value={tagName} onChange={tName}/>
-                            <label htmlFor="tag">Tag Name</label>
-                            <button onClick={handleSaveClick}>Save</button>
-                            <img className='img' src={props.photo}/>
-                            
+                            <div className="tag-elements">
+                                <input placeholder="Name tag here..." className="input" type="text" value={tagName} onChange={tName}/>
+                                {/* <label htmlFor="tag">Tag Name</label> */}
+                                <button className="searchBtn" onClick={handleSaveClick}>Save</button>
+                            </div>
+                            <img className='img-expand' src={props.photo}/>
+                            <button className="buttonX" onClick={closeModal}>x</button>
                         </div>
-                        <div className="modal-background" ></div>
                     </div>
                 </>
                 : null
