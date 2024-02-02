@@ -13,15 +13,11 @@ export default function Login() {
     }
   }, [])
   
-
-
-
-
-
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault()
     localStorage.setItem('isLoggedIn', 'true');
     localStorage.setItem('username', username);
-    window.open('/explore');
+    window.location.href = '/explore';
   };
 
   function user(e){
@@ -32,13 +28,15 @@ export default function Login() {
     <>
       <h1 className='muse'>Muse</h1>
       <h2 className='tag'>Frame Your Vision: <br/>Inspiration Awaits</h2>
-      <form className="form">
+      <form onSubmit={handleLogin}className="form">
         <h3 className='lets'>Welcome Back!</h3>
-        <label htmlFor="username">Username</label><br/>
-        <input onChange={user} value={username} name="username" /><br/>
-        <label htmlFor="password">Password</label><br/>
-        <input name="password" type="password"/>
-        <button onClick={handleLogin} type="submit" className="sub-btn">Submit</button>
+        <div className="inputs">
+          <label htmlFor="username">Username</label><br/>
+          <input onChange={user} value={username} name="username" /><br/>
+          <label htmlFor="password">Password</label><br/>
+          <input name="password" type="password"/>
+        </div>
+        <button type="submit" className="sub-btn">Submit</button>
       </form>
     </>
   );

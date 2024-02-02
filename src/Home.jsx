@@ -7,8 +7,9 @@ export default function Home(){
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn') === 'true' ? true : false)
 
   useEffect(() => {
-    console.log('yahoo')
-    window.location.href = '/explore';
+    if (isLoggedIn) {
+      window.location.href = '/explore';
+    }
   }, [])
     
     return (

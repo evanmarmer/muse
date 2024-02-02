@@ -49,11 +49,13 @@
     top: 750px; 
     left: 50%;
     transform: translateX(-50%);
-    height: 100%;
+    position: fixed;
+    bottom: 0;
     width: 1000px;
     background-color: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(8px);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0; /* Remove the border radius on the bottom */
+    border-bottom: none; /* Remove the border on the bottom */
 }
 
 .info {
