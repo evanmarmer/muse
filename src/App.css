@@ -1,3 +1,7 @@
+#root {
+  overflow: auto;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -27,7 +31,7 @@ li {
   display: inline;
   float: right;
   margin-top: 20px;
-
+  margin-bottom: 7px
 }
 
 ul.nav-links {

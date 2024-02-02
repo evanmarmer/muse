@@ -2,14 +2,15 @@
    overflow: hidden;
     max-width: 1200px; /* Adjust as needed */
     margin: 0 auto;
+    margin-top: 280px;
   }
   
   .image-grid > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top:190px;
-    margin-bottom: 80px;
+    /* margin-top:190px; */
+    /* margin-bottom: 80px; */
   }
   
   .image-grid {

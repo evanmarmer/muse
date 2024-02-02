@@ -6,6 +6,7 @@
     top: 100px; 
     left: 200px; 
     font-size: 170px;
+    letter-spacing: -13px; /* Adjust the value to decrease or increase letter spacing */
 }
 
 .tag {
