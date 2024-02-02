@@ -1,0 +1,39 @@
+.deleteBtn{
+    background-color: #247986;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px; /* Adjust the border radius as desired */
+    margin-left: 10px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.tagName {
+    background-color: #247986;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 10px 10px 0; /* Adjust the border radius as desired */
+    margin-right: 10px;
+    font-family: 'Gill Sans', sans-serif;
+    position: relative;
+    left: -200px; /* Adjust the left position as desired */
+    top: -870px;
+}
+
+.tagName::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -19px; /* Adjust the position as desired */
+    transform: translateY(-50%);
+    border-top: 24px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #247986; /* Adjust the color as desired */
+}

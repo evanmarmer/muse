@@ -43,7 +43,7 @@ class Img extends Model {}
           type: DataTypes.TEXT(),
           allowNull: false,
       },
-      tagName: {
+      tag: {
         type: DataTypes.STRING,
         allowNull: false
       }

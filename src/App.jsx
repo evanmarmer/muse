@@ -1,5 +1,5 @@
 import './App.css'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -19,29 +19,29 @@ function App() {
         {!isLoggedIn &&(
           <>
             <li>
-              <Link className="SU" to="/signup">SignUp</Link>
+              <NavLink className="SU" to="/signup">SignUp</NavLink>
             </li>
             <li>
-              <Link className="linksL" to="/login">Login</Link>
+              <NavLink className="linksL" to="/login">Login</NavLink>
             </li>
             <li>
-              <Link className="links" to="/about">About</Link>
+              <NavLink className="links" to="/about">About</NavLink>
             </li>
             <li>
-              <Link className="links" to="/gallery">Gallery</Link>
+              <NavLink className="links" to="/gallery">Gallery</NavLink>
             </li>
           </>
         )}
         {isLoggedIn &&(
           <>
             <li>
-              <Link className="links" to="/gallery">Gallery</Link>
+              <NavLink className="links" to="/gallery">Gallery</NavLink>
             </li>
             <li>
-              <Link className="links" to="/images">Images</Link>
+              <NavLink className="links" to="/images">Images</NavLink>
             </li>
             <li>
-              <Link className="links" to="/explore">Explore</Link>
+              <NavLink className="links" to="/explore">Explore</NavLink>
             </li>
           </>
         )}
