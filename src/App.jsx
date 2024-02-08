@@ -12,6 +12,13 @@ function App() {
     }
   }, [])
 
+  function logout() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('username');
+    setIsLoggedIn(false);
+    window.location.href = '/login';
+  }
+
   return (
     <>
       <header>
@@ -34,6 +41,9 @@ function App() {
         )}
         {isLoggedIn &&(
           <>
+            <li>
+              <button className="logout" onClick= {logout}>LogOut</button>
+            </li>
             <li>
               <NavLink className="links" to="/gallery">Gallery</NavLink>
             </li>

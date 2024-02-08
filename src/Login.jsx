@@ -31,10 +31,10 @@ export default function Login() {
       <form onSubmit={handleLogin}className="form">
         <h3 className='lets'>Welcome Back!</h3>
         <div className="inputs">
-          <label htmlFor="username">Username</label><br/>
-          <input onChange={user} value={username} name="username" /><br/>
-          <label htmlFor="password">Password</label><br/>
-          <input name="password" type="password"/>
+          <label className="label" htmlFor="username">Username</label><br/>
+          <input className='input3' onChange={user} value={username} name="username" /><br/>
+          <label className="label" htmlFor="password">Password</label><br/>
+          <input className='input3' name="password" type="password"/>
         </div>
         <button type="submit" className="sub-btn">Submit</button>
       </form>

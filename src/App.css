@@ -27,6 +27,14 @@ body {
   text-decoration: underline;
 }
 
+.SU.active {
+  text-decoration: underline;
+}
+
+.linksL.active {
+  text-decoration: underline;
+}
+
 li {
   display: inline;
   float: right;
@@ -66,3 +74,20 @@ ul.nav-links {
   text-decoration: underline;
 }
 
+.logout {
+  background-color: #247986;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-right: 60px;
+  margin-top: -10px; /* Add a negative margin-top value to move the button up */
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}

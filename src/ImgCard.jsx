@@ -6,6 +6,7 @@ function ImgCard(props) {
 
     const [tagName, setTagName] = useState('');
     const [modalIsShown, setModalIsShown] = useState(false)
+    const username = localStorage.getItem('username')
 
     function tName(e){
         e.preventDefault();
@@ -17,7 +18,8 @@ function ImgCard(props) {
         
         const newCard = {
             tagName: tagName,
-            imageSrc: props.photo 
+            imageSrc: props.photo, 
+            username: username
         };
         
         axios.post('/save', newCard)
