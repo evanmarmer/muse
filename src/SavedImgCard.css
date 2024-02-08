@@ -22,9 +22,9 @@
     border-radius: 0 10px 10px 0; /* Adjust the border radius as desired */
     margin-right: 10px;
     font-family: 'Gill Sans', sans-serif;
-    position: relative;
-    left: -420px; /* Adjust the left position as desired */
-    top: -870px;
+    position: fixed;
+    left: 75px; /* Adjust the left position as desired */
+    top: 42px;
 }
 
 .tagName::before {

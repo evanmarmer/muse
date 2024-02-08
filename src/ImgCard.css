@@ -50,9 +50,9 @@
 }
 
 .buttonX{
-    position: absolute;
+    position: fixed;
     top: 49px;
-    left: 1600px;
+    right: 70px;
     background-color: #247986;
     color: white;
     border: none;
@@ -66,6 +66,7 @@
 }
 
 .tag-elements {
+    min-width: 635px;
     position: absolute;
     top: 93%;
     left: 50%;

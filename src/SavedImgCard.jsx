@@ -53,12 +53,12 @@ export default function savedImgCard(props) {
                     <div className="modal-wrapper">
                         <div className="modal-box">
                             <div className="tag-elements">
-                                <span className="tagName">{props.tag}</span>
                                     <input placeholder="Rename tag here..." onKeyDown={handleKeyDown} className="input" type="text" value={newTag} onChange={(e)=>setNewTag(e.target.value)}/>
                                     <button className="searchBtn" onClick={handleSaveClick}>Save</button>
                                 <button className="deleteBtn" onClick={handleDeleteClick}>Delete Image</button>
                             </div>
                             <img className='img-expand' src={props.photo}/>
+                            <span className="tagName">{props.tag}</span>
                             <button className="buttonX" onClick={closeModal}>x</button>
                         </div>
                     </div>
